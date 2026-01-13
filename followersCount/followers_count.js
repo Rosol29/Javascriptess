@@ -24,3 +24,10 @@ function increaseCount() {
         displayCount(); // Display the count
         checkCountValue(); // Check count value and display messages
       }
+
+
+      function ResetCount(){
+        count=0;
+        displayCount();
+        alert("Followers count has been reset")
+      }
