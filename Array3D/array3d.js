@@ -1,7 +1,7 @@
 const theaterSeats=[
-    'X','O','X',
-    'O','X','O',
-    'X','O','X'
+    ['X','O','X'],
+    ['O','X','O'],
+   [ 'X','O','X']
 ];
 
 function updateSeatStatus(row,col,status){
@@ -18,6 +18,7 @@ function bookSeat(row,col){
         updateSeatStatus(row,col,'booked');
         alert(`Seat ${String.fromCharCode(65+ row)}${col + 1} is booked`)
     }else{
+        updateSeatStatus(row,col,'booked')
         alert(`Seat ${String.fromCharCode(65+row)}${col + 1} is already taken`)
     }
 
